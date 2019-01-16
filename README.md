@@ -6,6 +6,41 @@ The user should be able to select only a maximum of one option at a time, but th
 
 For example, the following JSON:
 
+```
+[
+  { 
+    "key": "resolution", 
+    "text": "Resolution",
+    "type": "select",
+    "values" : [
+      { "key": "720p", "text": "1280x720" },
+      { "key": "1080p", "text": "1920x1080" },
+      { "key": "qhd", "text": "2560x1440" },      
+      { "key": "uhd", "text": "3840x2160" }      
+    ]
+  },
+  {
+    "key": "aa",
+    "text": "Anti-aliasing",
+    "type": "select",
+    "values" : [
+      { "key": "true", "text": "Yes" },
+      { "key": "false", "text": "No" }
+    ]
+  },
+  {
+    "key": "effects",
+    "text": "Custom effects",
+    "type": "select",
+    "values" : [
+      { "key": "low", "text": "Low" },
+      { "key": "medium", "text": "Medium" },
+      { "key": "high", "text": "High" }
+    ]
+  }
+]
+```
+
 ...would generate the following UI:
 
 ## Considerations
