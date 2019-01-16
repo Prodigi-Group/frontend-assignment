@@ -1,4 +1,4 @@
-# frontend-assignment
+# Prodigi Frontend Assignment
 
 Assignment: Create a custom select component or control in the framework of your choosing. 
 
@@ -8,7 +8,7 @@ For example, the following JSON:
 
 ...would generate the following UI:
 
-Considerations
+## Considerations
 
 Design the application in a way that would make it easy to extend it with different types of settings (for example checkboxes / color picker entries etc.).
 
