@@ -1,5 +1,13 @@
 # Prodigi Frontend Assignment
 
+﻿# Intro
+
+This short exercise is meant to simulate some of the day to day work we do at Pwinty. 
+
+To submit- please make a fork of this Git repo, commit and push your changes, and then share the repo with @tomgallard. 
+
+Please use a seperate commit for each task. Add any notes/comments to the bottom of this file
+
 **Assignment*: Create a custom select component or control in the framework of your choosing.*
 
 ![img1](https://raw.githubusercontent.com/Pwinty-Internal/frontend-assignment/master/docs/img1.png)
