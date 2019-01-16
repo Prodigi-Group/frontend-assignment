@@ -10,8 +10,8 @@ For example, the following JSON:
 
 ## Considerations
 
-Design the application in a way that would make it easy to extend it with different types of settings (for example checkboxes / color picker entries etc.).
+* Design the application in a way that would make it easy to extend it with different types of settings (for example checkboxes / color picker entries etc.).
 
-The frontend needs to fetch the JSON from the server. A mockapi endpoint has been provided for convenience: http://5c3ef0e3c27832001404e2ac.mockapi.io/settings
+* The frontend needs to fetch the JSON from the server. A mockapi endpoint has been provided for convenience: http://5c3ef0e3c27832001404e2ac.mockapi.io/settings
 
-Tools such as create-react-app or angular-cli can be used for easy bootstrapping.
+* Tools such as create-react-app or angular-cli can be used for easy bootstrapping.
