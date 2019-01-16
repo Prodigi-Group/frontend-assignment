@@ -4,7 +4,7 @@
 
 ![img1](https://raw.githubusercontent.com/Pwinty-Internal/frontend-assignment/master/docs/img1.png)
 
-The user should be able to select only a maximum of one option at a time, but the control should also allow for a no selection state. Demonstrate the use of this control by creating a settings page that takes input configuration JSON and generates a list of setting entries based on this. 
+The user should be able to select only a maximum of one option at a time, but the control should also allow for a *no selection* state. Demonstrate the use of this control by creating a settings page that takes input configuration JSON and generates a list of setting entries based on this. 
 
 For example, the following JSON:
 
