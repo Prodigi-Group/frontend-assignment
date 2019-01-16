@@ -1,6 +1,6 @@
 # Prodigi Frontend Assignment
 
-﻿# Intro
+## Intro
 
 This short exercise is meant to simulate some of the day to day work we do at Pwinty. 
 
