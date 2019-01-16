@@ -49,4 +49,4 @@ For example, the following JSON:
 
 * The frontend needs to fetch the JSON from the server. A mockapi endpoint has been provided for convenience: http://5c3ef0e3c27832001404e2ac.mockapi.io/settings
 
-* Tools such as create-react-app or angular-cli can be used for easy bootstrapping.
+* Tools such as *create-react-app* or *angular-cli* can be used for easy bootstrapping.
