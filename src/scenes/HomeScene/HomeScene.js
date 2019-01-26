@@ -1,6 +1,7 @@
 import React from "react";
 
 import OptionList from "../../components/OptionList";
+import './HomeScene.scss';
 
 type Props = {
   data: Array
@@ -11,8 +12,8 @@ const HomeScene = ({ data }: Props) => {
       {data &&
         data.length &&
         data.map(list => (
-          <div key={list.key}>
-            <label>{list.text}</label>
+          <div className="option-container" key={list.key}>
+            <label className="option-container--label">{list.text}</label>
             <OptionList data={list.values} type={list.type} />
           </div>
         ))}

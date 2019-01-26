@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import Option from "../Option";
+import './OptionList.scss';
 
 type Props = {
   data: Array,
@@ -12,10 +13,10 @@ export default class OptionList extends PureComponent<Props, State> {
   };
   componentDidMount() {
     this.setState({
-      newData: this.deselectAll()
+      newData: this.updateItem()
     });
   }
-  deselectAll() {
+  updateItem() {
     const { newData } = this.state;
     return newData.map(item => Object.assign({ active: false }, item));
   }
@@ -25,8 +26,16 @@ export default class OptionList extends PureComponent<Props, State> {
       const { newData } = this.state;
       const mappedData = newData.map(mappedItem =>
         mappedItem.key === item.key
-          ? (mappedItem.active = true)
-          : (mappedItem.active = false)
+          ? {
+              active: true,
+              key: mappedItem.key,
+              text: mappedItem.text
+            }
+          : {
+              active: false,
+              key: mappedItem.key,
+              text: mappedItem.text
+            }
       );
       this.setState({
         newData: mappedData
@@ -35,9 +44,11 @@ export default class OptionList extends PureComponent<Props, State> {
     const { type } = this.props;
     const { newData } = this.state;
     return (
-      <div className="checkbox-wrapper">
+      <div className="option-list">
         {newData.length &&
-          newData.map(item => <Option props={{ item, type, selectItem }} />)}
+          newData.map(item => (
+            <Option key={item.key} props={{ item, type }} selectItem={selectItem} />
+          ))}
       </div>
     );
   }

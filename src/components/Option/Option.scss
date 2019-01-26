@@ -1,0 +1,20 @@
+.select {
+    border: none;
+    background: lightgray;
+    height: 40px;
+    border-left: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    &:first-of-type{
+        border-radius: 10px 0 0 10px;
+        border: none;
+    }
+    &:last-of-type{
+        border-radius: 0 10px 10px 0;
+    }
+    &.active {
+        background: darkgray;
+        color: white;
+
+    }
+}

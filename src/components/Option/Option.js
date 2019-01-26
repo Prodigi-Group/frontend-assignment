@@ -1,36 +1,25 @@
 import React from "react";
+import './Option.scss';
 
 type Props = {
   props: {
     item: Object,
-    type: string,
-    selectItem: () => void
-  }
+    type: string
+  },
+  selectItem: () => void
 };
 
-const Option = ({ props: { item, type, selectItem } }: Props) => {
+const Option = ({ props: { item, type }, selectItem }: Props) => {
   return (
-    <div>
-      {type === "select" ? (
+      type === "select" && (
         <button
-          className={`${item.active ? "active select" : "select"}`}
+          className={`${item.active ? "option-list--item active select" : "option-list--item select"}`}
           key={item.key}
           onClick={() => selectItem(item)}
         >
           {item.text}
         </button>
-      ) : (
-        <label>
-          <input
-            type={type}
-            key={item.key}
-            value={item.text}
-            checked={item.active}
-          />
-          {item.text}
-        </label>
-      )}
-    </div>
+      ) 
   );
 };
 
