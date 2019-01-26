@@ -1,8 +1,9 @@
 .select {
     border: none;
     background: lightgray;
-    height: 40px;
     border-left: 1px solid black;
+    padding: 20px 40px;
+    font-size: 1.2rem;
     outline: none;
     cursor: pointer;
     &:first-of-type{
@@ -13,8 +14,8 @@
         border-radius: 0 10px 10px 0;
     }
     &.active {
-        background: darkgray;
-        color: white;
+        background: #585858;
+        color: lightgray;
 
     }
 }
